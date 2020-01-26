@@ -4,3 +4,12 @@
     align-items: center;
 }
 
+@mixin buttonStyle {
+    background: #4aaaa5;
+    color: #fff;
+    border-radius: 0px 35px 35px 0px;
+    height: 4.58em;
+    text-transform: uppercase;
+    width: 7.5em;
+    border: solid .5px #000;
+}
