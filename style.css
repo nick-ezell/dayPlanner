@@ -63,6 +63,7 @@ button {
 }
 
 textarea {
+  padding-top: 1.5em;
   float: left;
   resize: none;
   display: -webkit-box;
@@ -75,7 +76,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 4em;
+  height: 2.65em;
   width: 50vw;
   border-radius: 35px 0px 0px 35px;
 }
