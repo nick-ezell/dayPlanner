@@ -22,20 +22,31 @@ $(document).ready(function () {
     let four = $("#fourPM");
     let five = $("#fivePM");
     //Retrieving set values for each hour
-    seven.text(localStorage.getItem("7AM"));
-    eight.text(localStorage.getItem("8AM"));
-    nine.text(localStorage.getItem("9AM"));
-    ten.text(localStorage.getItem("10AM"));
-    eleven.text(localStorage.getItem("11AM"));
-    twelve.text(localStorage.getItem("12PM"));
-    one.text(localStorage.getItem("1PM"));
-    two.text(localStorage.getItem("2PM"));
-    three.text(localStorage.getItem("3PM"));
-    four.text(localStorage.getItem("4PM"));
-    five.text(localStorage.getItem("5PM"));
+    seven.val(localStorage.getItem("7AM"));
+    eight.val(localStorage.getItem("8AM"));
+    nine.val(localStorage.getItem("9AM"));
+    ten.val(localStorage.getItem("10AM"));
+    eleven.val(localStorage.getItem("11AM"));
+    twelve.val(localStorage.getItem("12PM"));
+    one.val(localStorage.getItem("1PM"));
+    two.val(localStorage.getItem("2PM"));
+    three.val(localStorage.getItem("3PM"));
+    four.val(localStorage.getItem("4PM"));
+    five.val(localStorage.getItem("5PM"));
     //Click events for setting each hour to storage
     $("#clear").on("click", function(){
         localStorage.clear("7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM");
+        seven.val('');
+        eight.val('');
+        nine.val('');
+        ten.val('');
+        eleven.val('');
+        twelve.val('');
+        one.val('');
+        two.val('');
+        three.val('');
+        four.val('');
+        five.val('');
     });
     $(".sevenAM").on("click", function(){
         localStorage.setItem("7AM", seven.val());
