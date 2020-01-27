@@ -21,6 +21,12 @@ $(document).ready(function () {
     let three = $("#threePM");
     let four = $("#fourPM");
     let five = $("#fivePM");
+    //Coloring textareas by past/present/future times
+    function currentTime(){
+        let hr = moment(new Date()).format("h");
+        console.log(hr)
+    }
+    currentTime();
     //Retrieving set values for each hour
     seven.val(localStorage.getItem("7AM"));
     eight.val(localStorage.getItem("8AM"));
