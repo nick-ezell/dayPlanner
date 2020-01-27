@@ -43,6 +43,10 @@ button {
     }
 }
 
+#clear {
+    @include clearButton;
+}
+
 textarea {
     padding-top: 1.5em;
     float: left;

@@ -68,6 +68,16 @@ button:hover {
   cursor: pointer;
 }
 
+#clear {
+  background: #4aaaa5;
+  color: #fff;
+  border-radius: 35px;
+  height: 4.58em;
+  text-transform: uppercase;
+  width: 7.5em;
+  border: solid .5px #000;
+}
+
 textarea {
   padding-top: 1.5em;
   float: left;

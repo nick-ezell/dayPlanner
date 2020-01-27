@@ -34,37 +34,40 @@ $(document).ready(function () {
     four.text(localStorage.getItem("4PM"));
     five.text(localStorage.getItem("5PM"));
     //Click events for setting each hour to storage
+    $("#clear").on("click", function(){
+        localStorage.clear("7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM");
+    });
     $(".sevenAM").on("click", function(){
         localStorage.setItem("7AM", seven.val());
-    })
+    });
     $(".eightAM").on("click", function(){
         localStorage.setItem("8AM", eight.val());
-    })
+    });
     $(".nineAM").on("click", function(){
         localStorage.setItem("9AM", nine.val());
-    })
+    });
     $(".tenAM").on("click", function(){
         localStorage.setItem("10AM", ten.val());
-    })
+    });
     $(".elevenAM").on("click", function(){
         localStorage.setItem("11AM", eleven.val());
-    })
+    });
     $(".twelvePM").on("click", function(){
         localStorage.setItem("12PM", twelve.val());
-    })
+    });
     $(".onePM").on("click", function(){
         localStorage.setItem("1PM", one.val());
-    })
+    });
     $(".twoPM").on("click", function(){
         localStorage.setItem("2PM", two.val());
-    })
+    });
     $(".threePM").on("click", function(){
         localStorage.setItem("3PM", three.val());
-    })
+    });
     $(".fourPM").on("click", function(){
         localStorage.setItem("4PM", four.val());
-    })
+    });
     $(".fivePM").on("click", function(){
         localStorage.setItem("5PM", five.val());
-    })
+    });
 });
