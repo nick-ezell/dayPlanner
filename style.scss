@@ -30,11 +30,17 @@ header {
 
 .row {
     display: table;
+    margin-bottom: 1em;
 }
 
 button {
     @include buttonStyle;
     float: left;
+
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
 }
 
 textarea {
@@ -46,4 +52,21 @@ textarea {
     height: 2.65em;
     width: 50vw;
     border-radius: 35px 0px 0px 35px;
+}
+footer {
+    height: 10vh;
+    width: 100vw;
+    background: #666;
+    border-top: solid #4aaaa5 8px;
+    color: #fff;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    font-size: 15px;
+}
+a {
+    text-decoration: wavy;
+    color: #fff;
 }

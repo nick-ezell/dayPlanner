@@ -49,6 +49,7 @@ header {
 
 .row {
   display: table;
+  margin-bottom: 1em;
 }
 
 button {
@@ -60,6 +61,11 @@ button {
   width: 7.5em;
   border: solid .5px #000;
   float: left;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 textarea {
@@ -79,5 +85,31 @@ textarea {
   height: 2.65em;
   width: 50vw;
   border-radius: 35px 0px 0px 35px;
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background: #666;
+  border-top: solid #4aaaa5 8px;
+  color: #fff;
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  font-size: 15px;
+}
+
+a {
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
