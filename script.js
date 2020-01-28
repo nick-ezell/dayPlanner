@@ -9,8 +9,9 @@ $(document).ready(function () {
     dateTime = $('header')
     update();
     setInterval(update, 1000);
+    //Storing current hour as a variable
+    let now = moment().format("hA");
     //Declaring variables
-    let now = moment().format("hA")
     let textarea = $("textarea");
     let seven = $("#sevenAM");
     let eight = $("#eightAM");
@@ -24,12 +25,11 @@ $(document).ready(function () {
     let four = $("#fourPM");
     let five = $("#fivePM");
     //Coloring textareas by past/present/future times
-    console.log(now);
-    function colorByHour(){
-        if(textarea.attr("class") === now){
-
-        }
-    }
+    function textForEach(){
+        textarea.each(function(){
+            console.log($(this).attr("data-time"));
+    })};
+    textForEach();
     //Retrieving set values for each hour
     seven.val(localStorage.getItem("7AM"));
     eight.val(localStorage.getItem("8AM"));
